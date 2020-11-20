@@ -1,0 +1,38 @@
+2020/11/20(五), 109學年第一學期 資料科學應用 R小考(1)
+
+學號:A106260044        姓名: 黃麟凱
+
+# (請依照規定)貼上執行程式碼及執行結果。
+詳見: R程式作業繳交方式
+http://www.hmwu.idv.tw/web/teaching/doc/R-how-homework.pdf
+
+> # ex1(a)
+> library(readxl)
+Error in library(readxl) : there is no package called ‘readxl’
+> Calculus-score-A <- read.csv("Calculus-score-A.csv")
+Error in file(file, "rt") : 無法開啟連結
+此外: Warning message:
+In file(file, "rt") :
+  無法開啟檔案 'Calculus-score-A.csv' ：No such file or directory
+> head(Calculus-score-A,5)
+Error in head(Calculus - score - A, 5) : 找不到物件 'Calculus'
+> tail(Calculus-score-,5)
+錯誤: 未預期的 ',' in "tail(Calculus-score-,"
+> str(Calculus-score-A)
+Error in str(Calculus - score - A) : 找不到物件 'Calculus'
+> Calculus-score-B.xls <- read_excel("data/Calculus-score-B.xls", skip=1)
+Error in read_excel("data/Calculus-score-B.xls", skip = 1) : 
+  沒有這個函數 "read_excel"
+> head(Calculus-score-B.xls, 5)
+Error in head(Calculus - score - B.xls, 5) : 找不到物件 'Calculus'
+> tail(Calculus-score-B.xls, 5)
+Error in tail(Calculus - score - B.xls, 5) : 找不到物件 'Calculus'
+> str(Calculus-score-B.xls)
+Error in str(Calculus - score - B.xls) : 找不到物件 'Calculus'
+> #ex2(a)
+> set.seed(123456)
+> Letters.code <- sample(LETTERS[1:5], 20, replace=T)
+> Letters.code
+ [1] "D" "B" "B" "A" "E" "D" "B" "C" "C" "E" "C" "D" "B" "E" "A"
+[16] "B" "E" "C" "D" "C"
+> index<-c()
